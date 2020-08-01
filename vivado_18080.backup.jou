@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 15:02:32 2020
+# Process ID: 18080
+# Current directory: E:/riscV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17036 E:\riscV\riscV.xpr
+# Log file: E:/riscV/vivado.log
+# Journal file: E:/riscV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/riscV/riscV.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/riscV/riscV.srcs/constrs_1/imports/constrs/tinyriscv.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/riscV/riscV.srcs/constrs_1/imports/constrs/tinyriscv.xdc
+file mkdir E:/riscV/riscV.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v w ]
+add_files -fileset sim_1 E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v
+file delete -force E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v
+file mkdir E:/riscV/riscV.srcs/constrs_1/new
+close [ open E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc w ]
+add_files -fileset constrs_1 E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1

@@ -1,0 +1,1324 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 09:50:58 2020
+# Process ID: 12680
+# Current directory: E:/riscV/riscV.runs/synth_1
+# Command line: vivado.exe -log tinyriscv_soc_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tinyriscv_soc_top.tcl
+# Log file: E:/riscV/riscV.runs/synth_1/tinyriscv_soc_top.vds
+# Journal file: E:/riscV/riscV.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tinyriscv_soc_top.tcl -notrace
+Command: synth_design -top tinyriscv_soc_top -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10728 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 433.438 ; gain = 101.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tinyriscv_soc_top' [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:6]
+INFO: [Synth 8-6085] Hierarchical reference on 'regs' stops possible memory inference [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/regs.v:38]
+INFO: [Synth 8-6157] synthesizing module 'tinyriscv' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/tinyriscv.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/pc_reg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (1#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/pc_reg.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/ctrl.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (2#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/ctrl.v:6]
+INFO: [Synth 8-6157] synthesizing module 'regs' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/regs.v:6]
+INFO: [Synth 8-6085] Hierarchical reference on 'regs' stops possible memory inference [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/regs.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'regs' (3#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/regs.v:6]
+INFO: [Synth 8-6157] synthesizing module 'csr_reg' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/csr_reg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csr_reg' (4#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/csr_reg.v:6]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/if_id.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (5#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/if_id.v:6]
+INFO: [Synth 8-6157] synthesizing module 'id' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/id.v:6]
+INFO: [Synth 8-226] default block is never used [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/id.v:87]
+INFO: [Synth 8-226] default block is never used [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/id.v:104]
+INFO: [Synth 8-226] default block is never used [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/id.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'id' (6#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/id.v:6]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/id_ex.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (7#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/id_ex.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ex' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/ex.v:7]
+INFO: [Synth 8-226] default block is never used [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/ex.v:263]
+INFO: [Synth 8-226] default block is never used [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/ex.v:404]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (8#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/ex.v:7]
+INFO: [Synth 8-6157] synthesizing module 'div' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/div.v:8]
+	Parameter STATE_IDLE bound to: 0 - type: integer 
+	Parameter STATE_START bound to: 1 - type: integer 
+	Parameter STATE_INVERT bound to: 2 - type: integer 
+	Parameter STATE_END bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'div' (9#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/div.v:8]
+INFO: [Synth 8-6157] synthesizing module 'clint' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/clint.v:8]
+	Parameter S_INT_IDLE bound to: 4'b0001 
+	Parameter S_INT_SYNC_ASSERT bound to: 4'b0010 
+	Parameter S_INT_ASYNC_ASSERT bound to: 4'b0100 
+	Parameter S_INT_MRET bound to: 4'b1000 
+	Parameter S_CSR_IDLE bound to: 5'b00001 
+	Parameter S_CSR_MSTATUS bound to: 5'b00010 
+	Parameter S_CSR_MEPC bound to: 5'b00100 
+	Parameter S_CSR_MSTATUS_MRET bound to: 5'b01000 
+	Parameter S_CSR_MCAUSE bound to: 5'b10000 
+WARNING: [Synth 8-3848] Net raddr_o in module/entity clint does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/clint.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'clint' (10#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/clint.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'tinyriscv' (11#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/tinyriscv.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rom' [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/rom.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (12#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/rom.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ram' [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/ram.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (13#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/ram.v:6]
+INFO: [Synth 8-6157] synthesizing module 'uart' [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/uart.v:4]
+	Parameter BAUD_115200 bound to: 440 - type: integer 
+	Parameter S_IDLE bound to: 4'b0001 
+	Parameter S_START bound to: 4'b0010 
+	Parameter S_SEND_BYTE bound to: 4'b0100 
+	Parameter S_STOP bound to: 4'b1000 
+	Parameter UART_CTRL bound to: 8'b00000000 
+	Parameter UART_STATUS bound to: 8'b00000100 
+	Parameter UART_BAUD bound to: 8'b00001000 
+	Parameter UART_TXDATA bound to: 8'b00001100 
+	Parameter UART_RXDATA bound to: 8'b00010000 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/uart.v:89]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/uart.v:170]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/uart.v:294]
+WARNING: [Synth 8-3848] Net ack_o in module/entity uart does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/uart.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (14#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/uart.v:4]
+INFO: [Synth 8-6157] synthesizing module 'gpio' [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/gpio.v:4]
+	Parameter GPIO_CTRL bound to: 4'b0000 
+	Parameter GPIO_DATA bound to: 4'b0100 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/gpio.v:47]
+WARNING: [Synth 8-3848] Net ack_o in module/entity gpio does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/gpio.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'gpio' (15#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/perips/gpio.v:4]
+INFO: [Synth 8-6157] synthesizing module 'rib' [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/rib.v:7]
+	Parameter slave_0 bound to: 4'b0000 
+	Parameter slave_1 bound to: 4'b0001 
+	Parameter slave_2 bound to: 4'b0010 
+	Parameter slave_3 bound to: 4'b0011 
+	Parameter slave_4 bound to: 4'b0100 
+	Parameter slave_5 bound to: 4'b0101 
+	Parameter grant0 bound to: 2'b00 
+	Parameter grant1 bound to: 2'b01 
+	Parameter grant2 bound to: 2'b10 
+	Parameter grant3 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/rib.v:138]
+INFO: [Synth 8-226] default block is never used [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/rib.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'rib' (16#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/rib.v:7]
+INFO: [Synth 8-6157] synthesizing module 'jtag_top' [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_top.v:7]
+	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
+	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
+	Parameter DMI_OP_BITS bound to: 2 - type: integer 
+	Parameter DM_RESP_BITS bound to: 40 - type: integer 
+	Parameter DTM_REQ_BITS bound to: 40 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'jtag_driver' [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_driver.v:9]
+	Parameter IDCODE_VERSION bound to: 4'b0001 
+	Parameter IDCODE_PART_NUMBER bound to: 16'b1110001000000000 
+	Parameter IDCODE_MANUFLD bound to: 11'b10100110111 
+	Parameter DTM_VERSION bound to: 4'b0001 
+	Parameter IR_BITS bound to: 5 - type: integer 
+	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
+	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
+	Parameter DMI_OP_BITS bound to: 2 - type: integer 
+	Parameter DM_RESP_BITS bound to: 40 - type: integer 
+	Parameter DTM_REQ_BITS bound to: 40 - type: integer 
+	Parameter SHIFT_REG_BITS bound to: 40 - type: integer 
+	Parameter TEST_LOGIC_RESET bound to: 4'b0000 
+	Parameter RUN_TEST_IDLE bound to: 4'b0001 
+	Parameter SELECT_DR bound to: 4'b0010 
+	Parameter CAPTURE_DR bound to: 4'b0011 
+	Parameter SHIFT_DR bound to: 4'b0100 
+	Parameter EXIT1_DR bound to: 4'b0101 
+	Parameter PAUSE_DR bound to: 4'b0110 
+	Parameter EXIT2_DR bound to: 4'b0111 
+	Parameter UPDATE_DR bound to: 4'b1000 
+	Parameter SELECT_IR bound to: 4'b1001 
+	Parameter CAPTURE_IR bound to: 4'b1010 
+	Parameter SHIFT_IR bound to: 4'b1011 
+	Parameter EXIT1_IR bound to: 4'b1100 
+	Parameter PAUSE_IR bound to: 4'b1101 
+	Parameter EXIT2_IR bound to: 4'b1110 
+	Parameter UPDATE_IR bound to: 4'b1111 
+	Parameter REG_BYPASS bound to: 5'b11111 
+	Parameter REG_IDCODE bound to: 5'b00001 
+	Parameter REG_DMI bound to: 5'b10001 
+	Parameter REG_DTMCS bound to: 5'b10000 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_driver.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_driver' (17#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_driver.v:9]
+INFO: [Synth 8-6157] synthesizing module 'jtag_dm' [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_dm.v:13]
+	Parameter DMI_ADDR_BITS bound to: 6 - type: integer 
+	Parameter DMI_DATA_BITS bound to: 32 - type: integer 
+	Parameter DMI_OP_BITS bound to: 2 - type: integer 
+	Parameter DM_RESP_BITS bound to: 40 - type: integer 
+	Parameter DTM_REQ_BITS bound to: 40 - type: integer 
+	Parameter SHIFT_REG_BITS bound to: 40 - type: integer 
+	Parameter STATE_IDLE bound to: 2'b00 
+	Parameter STATE_EX bound to: 2'b01 
+	Parameter DCSR bound to: 16'b0000011110110000 
+	Parameter DMSTATUS bound to: 6'b010001 
+	Parameter DMCONTROL bound to: 6'b010000 
+	Parameter HARTINFO bound to: 6'b010010 
+	Parameter ABSTRACTCS bound to: 6'b010110 
+	Parameter DATA0 bound to: 6'b000100 
+	Parameter SBCS bound to: 6'b111000 
+	Parameter SBADDRESS0 bound to: 6'b111001 
+	Parameter SBDATA0 bound to: 6'b111100 
+	Parameter COMMAND bound to: 6'b010111 
+	Parameter DPC bound to: 16'b0000011110110001 
+	Parameter OP_SUCC bound to: 2'b00 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_dm.v:156]
+WARNING: [Synth 8-6014] Unused sequential element is_reseted_reg was removed.  [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_dm.v:115]
+WARNING: [Synth 8-6014] Unused sequential element sbdata0_reg was removed.  [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_dm.v:126]
+WARNING: [Synth 8-6014] Unused sequential element command_reg was removed.  [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_dm.v:127]
+WARNING: [Synth 8-6014] Unused sequential element req_data_reg was removed.  [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_dm.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_dm' (18#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_dm.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'jtag_top' (19#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_top.v:7]
+WARNING: [Synth 8-3848] Net timer0_int in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:129]
+WARNING: [Synth 8-3848] Net m3_addr_i in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:57]
+WARNING: [Synth 8-3848] Net m3_data_i in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:58]
+WARNING: [Synth 8-3848] Net m3_req_i in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:61]
+WARNING: [Synth 8-3848] Net m3_we_i in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:62]
+WARNING: [Synth 8-3848] Net s2_data_i in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:83]
+WARNING: [Synth 8-3848] Net s2_ack_i in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:84]
+WARNING: [Synth 8-3848] Net s5_data_i in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:107]
+WARNING: [Synth 8-3848] Net s5_ack_i in module/entity tinyriscv_soc_top does not have driver. [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'tinyriscv_soc_top' (20#1) [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:6]
+WARNING: [Synth 8-3331] design gpio has unconnected port ack_o
+WARNING: [Synth 8-3331] design gpio has unconnected port req_i
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[31]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[30]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[29]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[28]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[27]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[26]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[25]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[24]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[23]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[22]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[21]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[20]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[19]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[18]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[17]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[16]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[15]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[14]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[13]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[12]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[11]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[10]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[9]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[8]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[7]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[6]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[5]
+WARNING: [Synth 8-3331] design gpio has unconnected port addr_i[4]
+WARNING: [Synth 8-3331] design uart has unconnected port ack_o
+WARNING: [Synth 8-3331] design uart has unconnected port req_i
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[31]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[30]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[29]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[28]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[27]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[26]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[25]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[24]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[23]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[22]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[21]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[20]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[19]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[18]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[17]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[16]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[15]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[14]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[13]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[12]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[11]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[10]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[9]
+WARNING: [Synth 8-3331] design uart has unconnected port addr_i[8]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[31]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[30]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[29]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[28]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[27]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[26]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[25]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[24]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[23]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[22]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[21]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[20]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[19]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[18]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[17]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[16]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[15]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[14]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[13]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[12]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[11]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[10]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[9]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[8]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[1]
+WARNING: [Synth 8-3331] design ram has unconnected port addr_i[0]
+WARNING: [Synth 8-3331] design ram has unconnected port req_i
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[31]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[30]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[29]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[28]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[27]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[26]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[25]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[24]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[23]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[22]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[21]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[20]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[19]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[18]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[17]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[16]
+WARNING: [Synth 8-3331] design rom has unconnected port addr_i[15]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 515.605 ; gain = 183.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_tinyriscv:int_i[0] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:154]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[31] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[30] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[29] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[28] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[27] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[26] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[25] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[24] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[23] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[22] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[21] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[20] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[19] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[18] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[17] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[16] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[15] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[14] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[13] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[12] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[11] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[10] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[9] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[8] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[7] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[6] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[5] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[4] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[3] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[2] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[1] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_addr_i[0] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[31] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[30] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[29] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[28] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[27] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[26] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[25] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[24] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[23] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[22] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[21] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[20] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[19] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[18] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[17] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[16] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[15] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[14] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[13] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[12] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[11] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[10] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[9] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[8] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[7] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[6] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[5] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[4] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[3] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[2] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[1] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_data_i[0] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_req_i to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:m3_we_i to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[31] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[30] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[29] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[28] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[27] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[26] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[25] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[24] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[23] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[22] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[21] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[20] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[19] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[18] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[17] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[16] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[15] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[14] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[13] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[12] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[11] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[10] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[9] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[8] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[7] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[6] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[5] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[4] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[3] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[2] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[1] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_data_i[0] to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+WARNING: [Synth 8-3295] tying undriven pin u_rib:s2_ack_i to constant 0 [E:/riscV/riscV.srcs/sources_1/imports/rtl/soc/tinyriscv_soc_top.v:239]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 515.605 ; gain = 183.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 515.605 ; gain = 183.363
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc]
+WARNING: [Vivado 12-507] No nets matched 'jtag_TCK_IBUF'. [E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tinyriscv_soc_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tinyriscv_soc_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 841.176 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 841.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 841.176 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 841.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 841.176 ; gain = 508.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 841.176 ; gain = 508.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 841.176 ; gain = 508.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "mtvec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mtvec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mcause" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mcause" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mepc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mepc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mie" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mie" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mstatus" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mstatus" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mscratch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mscratch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mem_req" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_we_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_we_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_we_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/ex.v:413]
+INFO: [Synth 8-5544] ROM "mem_we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "div_start" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "div_we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/riscV/riscV.srcs/sources_1/imports/rtl/core/ex.v:103]
+INFO: [Synth 8-5544] ROM "mem_we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "div_start" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "div_we" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'div'
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ready_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'csr_state_reg' in module 'clint'
+INFO: [Synth 8-5545] ROM "int_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cause" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "waddr_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "we_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "int_assert_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_ctrl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "uart_baud" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cycle_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_data_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio_ctrl" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'jtag_state_reg' in module 'jtag_driver'
+INFO: [Synth 8-5546] ROM "sticky_busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ir_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ir_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shift_reg0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shift_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jtag_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'is_halted_reg' into 'dm_halt_req_reg' [E:/riscV/riscV.srcs/sources_1/imports/rtl/debug/jtag_dm.v:114]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jtag_dm'
+INFO: [Synth 8-5546] ROM "dm_mem_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dm_halt_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dmcontrol" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "abstractcs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dmstatus" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_read_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dm_mem_we" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+             STATE_START |                               01 |                               01
+            STATE_INVERT |                               10 |                               10
+               STATE_END |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              S_CSR_IDLE |                            00001 |                            00001
+              S_CSR_MEPC |                            00100 |                            00100
+           S_CSR_MSTATUS |                            00010 |                            00010
+            S_CSR_MCAUSE |                            10000 |                            10000
+      S_CSR_MSTATUS_MRET |                            01000 |                            01000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'csr_state_reg' in module 'clint'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        TEST_LOGIC_RESET |                 0000000000000001 |                             0000
+           RUN_TEST_IDLE |                 0000000000000010 |                             0001
+               SELECT_DR |                 0000000000000100 |                             0010
+               SELECT_IR |                 0000000000001000 |                             1001
+              CAPTURE_IR |                 0000000000010000 |                             1010
+                SHIFT_IR |                 0000000000100000 |                             1011
+                EXIT1_IR |                 0000000001000000 |                             1100
+                PAUSE_IR |                 0000000010000000 |                             1101
+                EXIT2_IR |                 0000000100000000 |                             1110
+               UPDATE_IR |                 0000001000000000 |                             1111
+              CAPTURE_DR |                 0000010000000000 |                             0011
+                SHIFT_DR |                 0000100000000000 |                             0100
+                EXIT1_DR |                 0001000000000000 |                             0101
+                PAUSE_DR |                 0010000000000000 |                             0110
+                EXIT2_DR |                 0100000000000000 |                             0111
+               UPDATE_DR |                 1000000000000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'jtag_state_reg' using encoding 'one-hot' in module 'jtag_driver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                               00
+                  iSTATE |                                1 |                               01
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'jtag_dm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 841.176 ; gain = 508.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 16    
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               40 Bit    Registers := 3     
+	               32 Bit    Registers := 76    
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 37    
++---RAMs : 
+	               2K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 2     
+	   4 Input     40 Bit        Muxes := 3     
+	   3 Input     40 Bit        Muxes := 1     
+	   7 Input     40 Bit        Muxes := 1     
+	   8 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 229   
+	  33 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 29    
+	  13 Input     32 Bit        Muxes := 4     
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 6     
+	   7 Input     32 Bit        Muxes := 27    
+	   8 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 4     
+	   2 Input     28 Bit        Muxes := 30    
+	   7 Input     28 Bit        Muxes := 24    
+	   4 Input     28 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 18    
+	  16 Input     16 Bit        Muxes := 1     
+	  13 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 19    
+	   3 Input      5 Bit        Muxes := 3     
+	  13 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	  13 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 165   
+	   7 Input      1 Bit        Muxes := 67    
+	   8 Input      1 Bit        Muxes := 8     
+	  13 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 56    
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 6     
+	  11 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tinyriscv_soc_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module pc_reg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+Module regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 113   
+	  33 Input     32 Bit        Muxes := 1     
+Module csr_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 6     
+Module if_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module id 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	  13 Input     12 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 17    
+	   3 Input      5 Bit        Muxes := 2     
+	  13 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	  13 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module id_ex 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ex 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 36    
+	   4 Input     32 Bit        Muxes := 13    
+	  13 Input     32 Bit        Muxes := 4     
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input     64 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 10    
+Module clint 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module tinyriscv 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+	   5 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+Module gpio 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module rib 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 38    
+	   4 Input     32 Bit        Muxes := 10    
+	   7 Input     32 Bit        Muxes := 24    
+	   2 Input     28 Bit        Muxes := 30    
+	   7 Input     28 Bit        Muxes := 24    
+	   4 Input     28 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 54    
+	   7 Input      1 Bit        Muxes := 48    
+Module jtag_driver 
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   4 Input     40 Bit        Muxes := 2     
+	   3 Input     40 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 16    
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module jtag_dm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 12    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   7 Input     40 Bit        Muxes := 1     
+	   2 Input     40 Bit        Muxes := 1     
+	   8 Input     40 Bit        Muxes := 1     
+	   4 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   7 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 3     
+	   3 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 40    
+	   7 Input      1 Bit        Muxes := 13    
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 15    
+	  10 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+Module jtag_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "mstatus" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mtvec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mcause" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mepc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mie" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mscratch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "div_start" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+DSP Report: Generating DSP mul_temp, operation Mode is: A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: Generating DSP mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+DSP Report: operator mul_temp is absorbed into DSP mul_temp.
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ready_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "waddr_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cause" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "u_jtag_dm/data0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_jtag_dm/abstractcs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_jtag_dm/dm_halt_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[4]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[5]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[6]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[8]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[9]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[10]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[11]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[12]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[13]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[16]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[17]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[18]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[19]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[20]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[21]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[22]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[23]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[24]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[25]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[26]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[27]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[29]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[28]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[30]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[31]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[17]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[17]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[19]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[19]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[23]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[23]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[15]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[3]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[16]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[16]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[22]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[22]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[21]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[21]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[20]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[20]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[18]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[18]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[13]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[13]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[13]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[12]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[12]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[12]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[11]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[11]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[10]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[8]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[8]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[9]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[24]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[24]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[27]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[27]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[26]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[26]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[25]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[25]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[4]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[4]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[7]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[7]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[6]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[6]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[5]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[5]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[29]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[29]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[28]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[28]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[30]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[30]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[31]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[31]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[15]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[14]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[15]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[15]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[1]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dcsr_reg[2]' (FDCE) to 'u_jtag_top/u_jtag_dm/dcsr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/hartinfo_reg[3]' (FDCE) to 'u_jtag_top/u_jtag_dm/hartinfo_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_jtag_top/u_jtag_dm/dmstatus_reg[3]' (FDCE) to 'u_jtag_top/u_jtag_dm/dmstatus_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_jtag_top/u_jtag_dm/dcsr_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[2]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[4]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[5]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[6]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[7]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[8]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[9]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[10]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[11]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[12]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[13]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[14]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[15]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[16]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[17]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_tinyriscv/u_clint/cause_reg[18]' (FDRE) to 'u_tinyriscv/u_clint/cause_reg[30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_tinyriscv/u_clint/cause_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_jtag_top/u_jtag_dm/dmstatus_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_tinyriscv/u_div/divisor_zero_result_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_tinyriscv/u_clint/waddr_o_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_tinyriscv/u_if_id/int_flag_o_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_jtag_top/u_jtag_dm/dm_resp_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_0/uart_rx_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uart_0/uart_status_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 901.762 ; gain = 569.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------+----------------+-----------+----------------------+-----------------+
+|Module Name       | RTL Object     | Inference | Size (Depth x Width) | Primitives      | 
++------------------+----------------+-----------+----------------------+-----------------+
+|tinyriscv_soc_top | u_rom/_rom_reg | Implied   | 64 x 32              | RAM64X1S x 32   | 
+|tinyriscv_soc_top | u_ram/_ram_reg | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------------+----------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ex          | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ex          | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 901.762 ; gain = 569.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:02:13 . Memory (MB): peak = 1147.914 ; gain = 815.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------------+----------------+-----------+----------------------+-----------------+
+|Module Name       | RTL Object     | Inference | Size (Depth x Width) | Primitives      | 
++------------------+----------------+-----------+----------------------+-----------------+
+|tinyriscv_soc_top | u_rom/_rom_reg | Implied   | 64 x 32              | RAM64X1S x 32   | 
+|tinyriscv_soc_top | u_ram/_ram_reg | Implied   | 64 x 32              | RAM64X1S x 32   | 
++------------------+----------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:21 . Memory (MB): peak = 1229.035 ; gain = 896.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 1229.035 ; gain = 896.793
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:02:23 . Memory (MB): peak = 1229.035 ; gain = 896.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 1229.035 ; gain = 896.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:20 ; elapsed = 00:02:24 . Memory (MB): peak = 1229.035 ; gain = 896.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:20 ; elapsed = 00:02:24 . Memory (MB): peak = 1229.035 ; gain = 896.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:20 ; elapsed = 00:02:24 . Memory (MB): peak = 1229.035 ; gain = 896.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   213|
+|3     |DSP48E1  |     4|
+|4     |LUT1     |   244|
+|5     |LUT2     |   541|
+|6     |LUT3     |   384|
+|7     |LUT4     |  1099|
+|8     |LUT5     |   901|
+|9     |LUT6     |  3256|
+|10    |MUXF7    |   345|
+|11    |MUXF8    |    21|
+|12    |RAM64X1S |    64|
+|13    |FDCE     |   366|
+|14    |FDPE     |     1|
+|15    |FDRE     |  2175|
+|16    |FDSE     |    19|
+|17    |IBUF     |     6|
+|18    |IOBUF    |     2|
+|19    |OBUF     |     5|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------+------------+------+
+|      |Instance          |Module      |Cells |
++------+------------------+------------+------+
+|1     |top               |            |  9648|
+|2     |  gpio_0          |gpio        |   102|
+|3     |  u_jtag_top      |jtag_top    |  1574|
+|4     |    u_jtag_dm     |jtag_dm     |  1383|
+|5     |    u_jtag_driver |jtag_driver |   181|
+|6     |  u_ram           |ram         |    33|
+|7     |  u_rib           |rib         |     5|
+|8     |  u_rom           |rom         |    33|
+|9     |  u_tinyriscv     |tinyriscv   |  7555|
+|10    |    u_clint       |clint       |   269|
+|11    |    u_csr_reg     |csr_reg     |   275|
+|12    |    u_div         |div         |  1441|
+|13    |    u_ex          |ex          |    94|
+|14    |    u_id_ex       |id_ex       |  2249|
+|15    |    u_if_id       |if_id       |   376|
+|16    |    u_pc_reg      |pc_reg      |   109|
+|17    |    u_regs        |regs        |  2742|
+|18    |  uart_0          |uart        |   271|
++------+------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:20 ; elapsed = 00:02:24 . Memory (MB): peak = 1229.035 ; gain = 896.793
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 259 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:02:17 . Memory (MB): peak = 1229.035 ; gain = 571.223
+Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:02:25 . Memory (MB): peak = 1229.035 ; gain = 896.793
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 649 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1229.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+286 Infos, 217 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1229.035 ; gain = 909.793
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1229.035 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/riscV/riscV.runs/synth_1/tinyriscv_soc_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tinyriscv_soc_top_utilization_synth.rpt -pb tinyriscv_soc_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 09:53:36 2020...

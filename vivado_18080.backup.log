@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 15:02:32 2020
+# Process ID: 18080
+# Current directory: E:/riscV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17036 E:\riscV\riscV.xpr
+# Log file: E:/riscV/vivado.log
+# Journal file: E:/riscV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/riscV/riscV.xpr
+INFO: [Project 1-313] Project file moved from 'D:/xilinx school/riscV' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'riscV.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 779.242 ; gain = 179.418
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/riscV/riscV.srcs/constrs_1/imports/constrs/tinyriscv.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/riscV/riscV.srcs/constrs_1/imports/constrs/tinyriscv.xdc
+file mkdir E:/riscV/riscV.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v w ]
+add_files -fileset sim_1 E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v
+file delete -force E:/riscV/riscV.srcs/sim_1/new/tinyriscv.v
+file mkdir E:/riscV/riscV.srcs/constrs_1/new
+close [ open E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc w ]
+add_files -fileset constrs_1 E:/riscV/riscV.srcs/constrs_1/new/tinyriscv.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Jul 31 15:08:55 2020] Launched synth_1...
+Run output will be captured here: E:/riscV/riscV.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Jul 31 15:14:14 2020] Launched impl_1...
+Run output will be captured here: E:/riscV/riscV.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Fri Jul 31 15:20:15 2020] Launched synth_1...
+Run output will be captured here: E:/riscV/riscV.runs/synth_1/runme.log
+[Fri Jul 31 15:20:15 2020] Launched impl_1...
+Run output will be captured here: E:/riscV/riscV.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Jul 31 15:24:56 2020] Launched synth_1...
+Run output will be captured here: E:/riscV/riscV.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Jul 31 15:32:38 2020] Launched impl_1...
+Run output will be captured here: E:/riscV/riscV.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 649 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.977 . Memory (MB): peak = 1530.215 ; gain = 2.465
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.978 . Memory (MB): peak = 1530.215 ; gain = 2.465
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1532.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 64 instances
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 1625.965 ; gain = 739.398
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Fri Jul 31 15:46:10 2020] Launched synth_1...
+Run output will be captured here: E:/riscV/riscV.runs/synth_1/runme.log
+[Fri Jul 31 15:46:10 2020] Launched impl_1...
+Run output will be captured here: E:/riscV/riscV.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Fri Jul 31 15:51:35 2020] Launched synth_1...
+Run output will be captured here: E:/riscV/riscV.runs/synth_1/runme.log
+[Fri Jul 31 15:51:35 2020] Launched impl_1...
+Run output will be captured here: E:/riscV/riscV.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 31 16:02:43 2020] Launched impl_1...
+Run output will be captured here: E:/riscV/riscV.runs/impl_1/runme.log

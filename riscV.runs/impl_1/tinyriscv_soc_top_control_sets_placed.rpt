@@ -1,0 +1,124 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Aug  1 09:54:41 2020
+| Host         : LAPTOP-20I5KGRG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file tinyriscv_soc_top_control_sets_placed.rpt
+| Design       : tinyriscv_soc_top
+| Device       : xc7s15
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    53 |
+| Unused register locations in slices containing registers |    95 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      4 |            4 |
+|      5 |            3 |
+|      7 |            1 |
+|      8 |            4 |
+|     10 |            1 |
+|     12 |            1 |
+|    16+ |           37 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             939 |          530 |
+| No           | No                    | Yes                    |              31 |           10 |
+| No           | Yes                   | No                     |             436 |          210 |
+| Yes          | No                    | No                     |             133 |           73 |
+| Yes          | No                    | Yes                    |             336 |          115 |
+| Yes          | Yes                   | No                     |             686 |          248 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+|     Clock Signal    |                        Enable Signal                       |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++---------------------+------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+| ~jtag_TCK_IBUF_BUFG |                                                            | u_jtag_top/u_jtag_driver/jtag_TDO_i_1_n_0       |                1 |              1 |
+|  clk_IBUF_BUFG      | uart_0/tx_reg_i_2_n_0                                      | uart_0/tx_reg_i_1_n_0                           |                1 |              1 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/abstractcs                            | u_jtag_top/u_jtag_dm/jtag_rst_reg               |                2 |              4 |
+|  clk_IBUF_BUFG      | uart_0/rx_clk_cnt0                                         | uart_0/rx_data                                  |                1 |              4 |
+|  clk_IBUF_BUFG      | uart_0/bit_cnt[3]_i_1_n_0                                  | uart_0/tx_reg_i_1_n_0                           |                1 |              4 |
+|  clk_IBUF_BUFG      | uart_0/state[3]_i_1_n_0                                    | u_tinyriscv/u_csr_reg/SR[0]                     |                2 |              4 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_div/count[6]_i_1_n_0                         | u_tinyriscv/u_id_ex/FSM_sequential_state_reg[1] |                1 |              5 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_clint/csr_state[4]_i_1_n_0                   | u_tinyriscv/u_csr_reg/SR[0]                     |                2 |              5 |
+| ~jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_driver/FSM_onehot_jtag_state_reg_n_0_[9] | u_jtag_top/u_jtag_driver/ir_reg                 |                2 |              5 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_div/op_o[2]_i_1_n_0                          | u_tinyriscv/u_csr_reg/SR[0]                     |                4 |              7 |
+|  clk_IBUF_BUFG      |                                                            | u_jtag_top/u_jtag_dm/jtag_rst_reg               |                5 |              8 |
+|  clk_IBUF_BUFG      | u_jtag_top/u_jtag_dm/E[0]                                  | u_tinyriscv/u_csr_reg/SR[0]                     |                1 |              8 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/E[0]                                   |                                                 |                2 |              8 |
+|  clk_IBUF_BUFG      | uart_0/rx_data[7]_i_1_n_0                                  | uart_0/rx_data                                  |                2 |              8 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/dm_reg_addr[4]_i_1_n_0                | u_jtag_top/u_jtag_dm/jtag_rst_reg               |                4 |             10 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/dm_mem_addr[31]_i_1_n_0               | u_jtag_top/u_jtag_dm/jtag_rst_reg               |                5 |             12 |
+|  clk_IBUF_BUFG      |                                                            | uart_0/rx_clk_cnt[0]_i_1_n_0                    |                4 |             16 |
+|  clk_IBUF_BUFG      | uart_0/cycle_cnt[0]_i_2_n_0                                | uart_0/cycle_cnt[0]_i_1_n_0                     |                4 |             16 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/mem_we_o_reg_0[0]                      | u_tinyriscv/u_csr_reg/SR[0]                     |               18 |             30 |
+|  jtag_TCK_IBUF_BUFG |                                                            | u_jtag_top/u_jtag_dm/jtag_rst_reg               |               10 |             31 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/dmcontrol_1                           | u_jtag_top/u_jtag_dm/jtag_rst_reg               |               12 |             32 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/sbaddress0_0                          | u_jtag_top/u_jtag_dm/jtag_rst_reg               |               11 |             32 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/sbcs                                  | u_jtag_top/u_jtag_dm/jtag_rst_reg               |                9 |             32 |
+|  clk_IBUF_BUFG      |                                                            | u_tinyriscv/u_if_id/inst_o[31]_i_1__0_n_0       |               27 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_clint/E[0]                                   | u_tinyriscv/u_csr_reg/SR[0]                     |                9 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_clint/dm_op_req_reg[0]                       | u_jtag_top/SR[0]                                |               14 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_div/div_remain[31]_i_1_n_0                   | u_tinyriscv/u_csr_reg/SR[0]                     |                9 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_clint/waddr_o_reg[8]_1[0]                    | u_tinyriscv/u_csr_reg/SR[0]                     |                7 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_clint/waddr_o_reg[6]_0[0]                    | u_tinyriscv/u_csr_reg/SR[0]                     |                7 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_clint/waddr_o_reg[8]_0[0]                    | u_tinyriscv/u_csr_reg/SR[0]                     |                8 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_div/div_result[31]_i_1_n_0                   | u_tinyriscv/u_csr_reg/SR[0]                     |                9 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/p_1_in__0                              |                                                 |                8 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/p_1_in__1                              |                                                 |                8 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/csr_waddr_o_reg[7]_1[0]                | u_tinyriscv/u_csr_reg/SR[0]                     |                9 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/pc_o_reg[2]_0[0]                       | u_tinyriscv/u_csr_reg/SR[0]                     |               17 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/pc_o_reg[0][0]                         | u_tinyriscv/u_csr_reg/SR[0]                     |               22 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/pc_o_reg[3]_0[0]                       | u_tinyriscv/u_csr_reg/SR[0]                     |               18 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/csr_waddr_o_reg[2]_0[0]                | u_tinyriscv/u_csr_reg/SR[0]                     |                9 |             32 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/data0                                 | u_jtag_top/u_jtag_dm/jtag_rst_reg               |                9 |             32 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/dm_mem_wdata[31]_i_1_n_0              | u_jtag_top/u_jtag_dm/jtag_rst_reg               |               15 |             32 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/dm_reg_wdata[31]_i_1_n_0              | u_jtag_top/u_jtag_dm/jtag_rst_reg               |               11 |             32 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_div/count[6]_i_1_n_0                         |                                                 |               10 |             34 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_clint/p_1_in[2]                              | u_tinyriscv/u_csr_reg/SR[0]                     |               14 |             35 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_dm/dm_resp_data[39]_i_1_n_0              | u_jtag_top/u_jtag_dm/jtag_rst_reg               |               15 |             38 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_driver/dtm_req_data[39]_i_1_n_0          | u_jtag_top/u_jtag_dm/jtag_rst_reg               |               11 |             40 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_driver/shift_reg                         | u_jtag_top/u_jtag_driver/shift_reg0             |               13 |             40 |
+|  jtag_TCK_IBUF_BUFG | u_jtag_top/u_jtag_driver/dtm_req_valid_reg_0[0]            | u_jtag_top/u_jtag_dm/jtag_rst_reg               |               11 |             40 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/FSM_sequential_state_reg[0][0]         | u_tinyriscv/u_csr_reg/SR[0]                     |               22 |             65 |
+|  clk_IBUF_BUFG      | u_tinyriscv/u_id_ex/FSM_sequential_state_reg[1]_0[0]       | u_tinyriscv/u_csr_reg/SR[0]                     |               22 |             65 |
+|  clk_IBUF_BUFG      | rst_IBUF                                                   |                                                 |               61 |             91 |
+|  clk_IBUF_BUFG      |                                                            | u_tinyriscv/u_if_id/dm_op_req_reg               |               89 |            151 |
+|  clk_IBUF_BUFG      |                                                            | u_tinyriscv/u_csr_reg/SR[0]                     |               84 |            228 |
+|  clk_IBUF_BUFG      |                                                            |                                                 |              530 |            939 |
++---------------------+------------------------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+
